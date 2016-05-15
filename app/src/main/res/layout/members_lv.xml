@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              >
+<TextView
+    android:id="@+id/number_tv"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:layout_centerVertical="true"
+    android:textColor="@color/White"
+    android:background="@drawable/border"
+    />
+    <TextView
+        android:id="@+id/lawyer_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_toRightOf="@id/number_tv"
+        android:text="Mr. Subhash"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/lawyer_id_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/number_tv"
+        android:layout_below="@id/lawyer_name_tv"
+        android:padding="5dp"
+        android:text="123dnvs5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

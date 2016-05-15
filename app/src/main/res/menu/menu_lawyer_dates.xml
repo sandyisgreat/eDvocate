@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="advocate.com.advocateapp.Activity.LawyerDatesActivity">
+    <item
+        android:id="@+id/action_profile"
+        android:orderInCategory="100"
+        android:title="Profile"
+        />
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="101"
+        android:title="About"
+        android:visible="false"
+        />
+
+</menu>

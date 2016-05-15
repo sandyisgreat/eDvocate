@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="advocate.com.advocateapp.Activity.LawyerDatesActivity"
+    tools:showIn="@layout/activity_lawyer_dates2">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbar_layout">
+
+    </android.support.v4.view.ViewPager>
+
+    <ImageView
+        android:id="@+id/right_arrow"
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        android:scaleType="fitXY"
+        android:src="@mipmap/arrow_right_gery_round"/>
+
+    <ImageView
+        android:id="@+id/left_arrow"
+        android:layout_width="50dp"
+        android:visibility="gone"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/arrow_left_round"/>
+</RelativeLayout>

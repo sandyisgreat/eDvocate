@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="advocate.com.advocateapp.Activity.MyDatesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ListView
+          android:id="@+id/dates_lv"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+      </ListView>
+    <TextView
+        android:id="@+id/message_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Dates For Today"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:visibility="gone"
+        android:textStyle="bold"/>
+
+</FrameLayout>

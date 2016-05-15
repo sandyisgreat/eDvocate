@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignUpActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/glolioRed">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:id="@+id/home_bt"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/outline_white"
+                    android:src="@drawable/advocate_logo"/>
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="REGISTER"
+                    android:textColor="@color/White"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/save_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/button_selector_red"
+                    android:text="EDIT"
+                    android:textColor="@color/White"/>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/content_layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbar_layout"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/username"/>
+
+                <EditText
+                    android:id="@+id/name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="First Name"
+                    android:paddingLeft="35dp"
+
+                    android:singleLine="true"
+                    android:textColor="@color/glolioRed"
+                    android:textColorHint="@color/Gray"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+
+                <EditText
+                    android:id="@+id/last_name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Last Name"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/glolioRed"
+                    android:textColorHint="@color/Gray"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mobile"/>
+
+            <EditText
+                android:id="@+id/mobile_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Mobile"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingLeft="35dp"
+                android:singleLine="true"
+
+                android:textColor="@color/glolioRed"
+                android:textColorHint="@color/Gray"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/email"/>
+
+            <EditText
+                android:id="@+id/email_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+
+                android:paddingLeft="35dp"
+                android:singleLine="true"
+                android:textColor="@color/glolioRed"
+                android:textColorHint="@color/Gray"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/username"/>
+
+            <EditText
+                android:id="@+id/lawyer_id_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Lawyer Id"
+                android:paddingLeft="35dp"
+
+                android:singleLine="true"
+                android:textColor="@color/glolioRed"
+                android:textColorHint="@color/Gray"
+                android:textSize="12sp"/>
+
+
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/indi_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Individual"/>
+
+        <CheckBox
+            android:id="@+id/firm_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Firm"/>
+
+        <Button
+            android:id="@+id/register_bt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/content_layout_login"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_bt_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="SIGN UP"
+            android:textColor="@color/glolioRed"/>
+
+        <Button
+            android:id="@+id/add_join_firm_bt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/content_layout_login"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_selector_red"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Add/JOIN FIRM"
+            android:textColor="@color/White"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</RelativeLayout>

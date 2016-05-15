@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="advocate.com.advocateapp.Activity.AddOrJoinFirmActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/glolioRed"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:id="@+id/home_bt"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/outline_white"
+                    android:src="@drawable/advocate_logo"/>
+
+                <TextView
+                    android:id="@+id/city_name"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="ADD/JOIN FIRM"
+                    android:textColor="@color/White"
+                    android:textSize="20sp"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/id1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appbar_layout"
+        android:padding="10dp"
+        android:text="Creat A Firm"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id1"
+        card_view:cardElevation="4sp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/create_firm_et"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:singleLine="true"
+
+                android:layout_weight=".75"
+                android:gravity="center"
+                android:hint="Create a Firm with Name"/>
+
+            <Button
+                android:id="@+id/create_bt"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight=".25"
+                android:background="@drawable/button_selector_red"
+                android:text="Create"
+                android:textColor="@color/White"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/id2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll1"
+        android:padding="5dp"
+        android:text="Join A Firm"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id2"
+        card_view:cardElevation="4sp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/firm_actv"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight=".75"
+                android:singleLine="true"
+
+                android:gravity="center"
+                android:hint="Enter a Firm Name "/>
+
+            <Button
+                android:id="@+id/join_bt"
+
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight=".25"
+                android:background="@drawable/button_selector_red"
+                android:text="Join"
+                android:textColor="@color/White"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll2"
+        android:padding="5dp"
+        android:text="Associaited Firms : "/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="4sp"
+        card_view:cardUseCompatPadding="true">
+
+        <ListView
+            android:id="@+id/firm_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
